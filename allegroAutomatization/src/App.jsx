@@ -27,6 +27,15 @@ function App() {
             <th style={{color: "red"}}>First 3 rows are for Allegro usage, do not change them. Do not remove any columns.</th>
           </tr>
           <tr>
+            <th>Order Information</th>
+            <th>Basic Information</th>
+            <th>Tax parameters</th>
+            <th>Terms of Sales</th>
+            <th>Order Information</th>
+            <th>Order Information</th>
+
+          </tr>
+          <tr>
             <td>hello</td>
             <td>hello</td>
             <td>hello</td>
