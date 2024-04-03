@@ -1,39 +1,38 @@
-import { useEffect, useState } from 'react'
-
-import './App.css'
-import generateExcel from 'zipcelx'
+import { useEffect, useState } from "react";
+import Client from "shopify-buy";
+import "./App.css";
+import generateExcel from "zipcelx";
+import { fetchAllProducts } from "./shopify";
 
 function App() {
-useEffect(() => {
-  fetch('https://50f2fa.myshopify.com/admin/api/2023-01/products.json?limit=120&fields=variants', {
-    headers: {
-      'X-Shopify-Access-Token': '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',
-      'rel': 'next'
+  const [products, setProducts] = useState([])
+
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const productsData = await fetchAllProducts();
+        setProducts(productsData)
+        console.log(products)
+      } catch (err) {
+        console.log("Error:", err)
+      }
     }
-  }).then((arr) => {
-    arr.forEach((key) => {
-      let res = []
-      res = key 
 
-      console.log(res)
-    })
-  })
-
-  
-}, [])
-
+    fetchProducts()
+  }, []);
 
   const config = {
-    filename: 'allegro-doc',
+    filename: "allegro-doc",
     sheet: {
-      data: []
-    }
-  }
+      data: [],
+    },
+  };
 
   return (
     <>
-        <table>
-          <thead>
+      <table>
+        <thead>
           <tr>
             <th></th>
             <th></th>
@@ -42,7 +41,10 @@ useEffect(() => {
             <th></th>
             <th></th>
             <th>Version: 5.1 (en), updated: 14.03.2024</th>
-            <th style={{color: "red"}}>First 3 rows are for Allegro usage, do not change them. Do not remove any columns.</th>
+            <th style={{ color: "red" }}>
+              First 3 rows are for Allegro usage, do not change them. Do not
+              remove any columns.
+            </th>
           </tr>
           <tr>
             <th>Order Information</th>
@@ -72,34 +74,34 @@ useEffect(() => {
             <th>Brand</th>
             <th>Model</th>
             <th>Manufacturers code</th>
-            
           </tr>
-          </thead>
-          <tbody>
+        </thead>
+        <tbody>
           <tr>
             <td>hello</td>
             <td>hello</td>
             <td>hello</td>
             <td>hello</td>
-          </tr><tr>
-            <td>hello</td>
-            <td>hello</td>
-            <td>hello</td>
-            <td>hello</td>
-          </tr><tr>
+          </tr>
+          <tr>
             <td>hello</td>
             <td>hello</td>
             <td>hello</td>
             <td>hello</td>
           </tr>
-          </tbody>
-        </table>
-        <button onClick={() =>  generateExcel(config)}>
-          Generate Excel document 
-        </button>
-      
+          <tr>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+            <td>hello</td>
+          </tr>
+        </tbody>
+      </table>
+      <button onClick={() => generateExcel(config)}>
+        Generate Excel document
+      </button>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
