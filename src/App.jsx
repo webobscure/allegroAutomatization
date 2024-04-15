@@ -1,26 +1,29 @@
 import { useEffect, useState } from "react";
-import Client from "shopify-buy";
 import "./App.css";
 import generateExcel from "zipcelx";
-import { fetchAllProducts } from "./shopify";
 
 function App() {
   const [products, setProducts] = useState([])
 
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const productsData = await fetchAllProducts();
-        setProducts(productsData)
-        console.log(products)
-      } catch (err) {
-        console.log("Error:", err)
-      }
-    }
+    const myHeaders = new Headers();
+myHeaders.append("X-Shopify-Access-Token", "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");
+myHeaders.append("rel", "next");
 
-    fetchProducts()
-  }, []);
+const requestOptions = {
+  method: "GET",
+  headers: myHeaders,
+  redirect: "follow"
+};
+const productsURL = "https://50f2fa.myshopify.com/admin/api/2023-01/products.json?limit=200&fields=variants"
+const metaURL = "https://50f2fa.myshopify.com/admin/api/2023-01/products/8714838147401/metafields.json?limit=200"
+const corsURL = "https://web-production-43a4.up.railway.app/"
+fetch(`${corsURL}${productsURL}`, requestOptions)
+  .then((response) => response.json())
+  .then((result) => console.log(result))
+  .catch((error) => console.error(error));
+    }, []);
 
   const config = {
     filename: "allegro-doc",

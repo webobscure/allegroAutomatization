@@ -1,3 +1,4 @@
+/*
 import Client from 'shopify-buy'
 
 const client = Client.buildClient({
@@ -15,3 +16,4 @@ export const fetchAllProducts = async () => {
         throw err;
     }
 }
+*/
