@@ -1,0 +1,470 @@
+<div class="new_listing_descr_full_size">
+    <div class="sample">
+        <div class="demo" id="demo-container">
+            <!-- Import the component --><!-- Use it like any other HTML element --><model-viewer
+                alt="A 3D model of TS1140" ar="" ar-modes="webxr scene-viewer quick-look" ar-status="not-presenting"
+                auto-rotate="" camera-controls="" camera-orbit="0deg 75deg" data-js-focus-visible=""
+                environment-image="legacy" poster="https://shop.onkron.ru/images/product_images/popup_images/493_0.png"
+                src="themes/CDF222EB.glb"></model-viewer></div>
+    </div>
+</div>
+<style type="text/css">
+    .main-content-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #content-layout {
+        max-width: 1280px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .layout-header {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .layout-header__img {
+        width: 100%;
+    }
+
+    @media screen and (max-width: 480px) {
+        .layout-header__img {
+            border-radius: 16px;
+            background: -webkit-gradient(linear, left bottom, left top, from(rgb(255, 255, 255)), to(rgb(204, 204, 204)));
+            background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(204, 204, 204) 100%);
+        }
+    }
+
+    .layout-header .layout-header__title {
+        position: absolute;
+        font-size: clamp(1.063em, 3.646vw + 0.333em, 3.25em);
+        font-weight: 600;
+        color: #000 !important;
+    }
+
+    @media screen and (max-width: 480px) {
+        .layout-header .layout-header__title {
+            position: static;
+            text-align: center;
+        }
+    }
+
+    .layout-header_mob {
+        display: none;
+    }
+
+    .layout-icons {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0;
+        width: 100%;
+        list-style-type: none;
+        gap: 2%;
+        margin: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .layout-icons .layout-icons__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 16.6666666667%;
+    }
+
+    .layout-icons .layout-icons__item:nth-child(4) .item__img-wrapper,
+    .layout-icons .layout-icons__item:nth-child(6) .item__img-wrapper {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: clamp(0.313rem, 1.042vw + 0.104rem, 0.938rem) 0 !important;
+    }
+
+    .layout-icons .layout-icons__item .item__img-wrapper {
+        height: clamp(1.125em, 5.521vw + 0.021em, 4.438em);
+    }
+
+    .layout-icons .layout-icons__item .item__img-wrapper .item__img {
+        height: 100%;
+    }
+
+    .layout-icons .layout-icons__item .item__title {
+        text-align: center;
+        font-size: clamp(0.438em, 2.083vw + 0.021em, 1.688em);
+        color: #000;
+        margin: 12px 0 !important;
+        font-weight: 600;
+    }
+
+    .layout-icons .layout-icons__item .item__desc {
+        font-size: clamp(0.25em, 1.354vw - 0.021em, 1.063em);
+    }
+
+    .full-img {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        margin: 39.6px 0 !important;
+    }
+
+    .full-img__img {
+        width: 100%;
+    }
+
+    .full-img_text-left {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+
+    .full-img_text-right {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+
+    .full-img_text-center {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 480px) {
+        .full-img_text-mob-right {
+            -webkit-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+        }
+
+        .full-img_text-mob-left {
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+        }
+
+        .full-img_text-mob-bottom {
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+    }
+
+    .title-box,
+    .text-box {
+        position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 50%;
+        height: 100%;
+    }
+
+    .title-box {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 45%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: clamp(1.5625em, -1.2188em + 9.2708vw, 7.125em) !important;
+    }
+
+    .title-box__title {
+        font-size: clamp(1.063em, 4.479vw + 0.167em, 3.75em);
+        font-weight: 600 !important;
+        color: #fff;
+        line-height: 1 !important;
+        margin: 1.3em 0 !important;
+    }
+
+    .title-box_block2 {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 45%;
+    }
+
+    @media screen and (max-width: 480px) {
+        .title-box_block2 {
+            width: 40%;
+        }
+    }
+
+    .title-box_block4 {
+        width: 70%;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+
+    @media screen and (max-width: 480px) {
+        .title-box_block3 {
+            -webkit-box-align: end;
+            -ms-flex-align: end;
+            align-items: flex-end;
+            width: 30%;
+            padding-bottom: 2em !important;
+        }
+    }
+
+    .grid-layout {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .grid-layout__grid-item {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: end;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #fff;
+        -webkit-box-flex: 2;
+        -ms-flex: 2 40%;
+        flex: 2 40%;
+    }
+
+    @media screen and (max-width: 480px) {
+        .grid-layout__grid-item {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 100%;
+            flex: 1 100%;
+        }
+    }
+
+    .grid-layout__grid-item .grid-item__img {
+        width: 100%;
+    }
+
+    .grid-layout__grid-item .grid-item__title {
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        font-size: clamp(1.063em, 1.875vw + 0.688em, 2.188em);
+        margin: 5% 3% !important;
+        font-weight: 600;
+    }
+
+    @media screen and (max-width: 480px) {
+        .grid-layout__grid-item .grid-item__title {
+            position: static;
+            color: #000 !important;
+            margin: 2% !important;
+        }
+    }
+</style>
+<div class="main-content-container">
+    <div id="content-layout">
+        <section class="layout-header layout-header_desc">
+            <picture>
+                <source media="(max-width: 480px)"
+                    srcset="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-header-mob2.webp" />
+                <img alt="CDF222E - основа для стола вашей мечты" class="layout-header__img"
+                    src="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-header-desc.webp" />
+            </picture>
+            <h2 class="layout-header__title">CDF222E - основа для стола вашей мечты</h2>
+        </section>
+
+        <ul class="layout-icons">
+            <li class="layout-icons__item">
+                <div class="item__img-wrapper"><img alt="Нагрузка" class="item__img"
+                        src="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-icon-load.svg" />
+                </div>
+
+                <h3 class="item__title">Нагрузка</h3>
+                <span class="item__desc">100 кг</span>
+            </li>
+            <li class="layout-icons__item">
+                <div class="item__img-wrapper"><img alt="Регулировка высоты" class="item__img"
+                        src="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-icon-height.svg" />
+                </div>
+
+                <h3 class="item__title">Регулировка высоты</h3>
+                <span class="item__desc">73-120 см</span>
+            </li>
+            <li class="layout-icons__item">
+                <div class="item__img-wrapper"><img alt="Скорость подъема" class="item__img"
+                        src="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-icon-lift.svg" />
+                </div>
+
+                <h3 class="item__title">Скорость подъема</h3>
+                <span class="item__desc">25 мм/сек</span>
+            </li>
+            <li class="layout-icons__item">
+                <div class="item__img-wrapper"><img alt="Режим памяти" class="item__img"
+                        src="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-icon-lstorage.svg" />
+                </div>
+
+                <h3 class="item__title">Режим памяти</h3>
+                <span class="item__desc">3 установки</span>
+            </li>
+            <li class="layout-icons__item">
+                <div class="item__img-wrapper"><img alt="Поддерживаемые столешницы" class="item__img"
+                        src="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-icon-table.svg" />
+                </div>
+
+                <h3 class="item__title">Поддерживаемые столешницы</h3>
+                <span class="item__desc">(100-170) x (60-75) см</span>
+            </li>
+            <li class="layout-icons__item">
+                <div class="item__img-wrapper"><img alt="Уровень шума" class="item__img"
+                        src="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-icon-noise.svg" />
+                </div>
+
+                <h3 class="item__title">Уровень шума</h3>
+                <span class="item__desc">50 дБ</span>
+            </li>
+        </ul>
+
+        <section class="full-img">
+            <picture>
+                <source media="(max-width: 480px)"
+                    srcset="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-block1-mob.webp" />
+                <img alt="Лучше конкурентов" class="full-img__img"
+                    src="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-block1-desc.webp" />
+            </picture>
+        </section>
+
+        <section class="grid-layout">
+            <div class="grid-layout__grid-item grid-item">
+                <picture>
+                    <source media="(max-width: 480px)"
+                        srcset="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-grid1-mob.webp" />
+                    <img alt="Укрепление здоровья и рост продуктивности" class="full-img__img"
+                        src="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-grid1-desc.webp" />
+                </picture>
+
+                <h5 class="grid-item__title">Укрепление здоровья и рост продуктивности</h5>
+            </div>
+
+            <div class="grid-layout__grid-item grid-item">
+                <picture>
+                    <source media="(max-width: 480px)"
+                        srcset="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-grid2-mob.webp" />
+                    <img alt="Подстолье держит нагрузку в любом положении" class="full-img__img"
+                        src="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-grid2-desc.webp" />
+                </picture>
+
+                <h5 class="grid-item__title">Подстолье держит нагрузку в любом положении</h5>
+            </div>
+
+            <div class="grid-layout__grid-item grid-item">
+                <picture>
+                    <source media="(max-width: 480px)"
+                        srcset="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-grid3-mob.webp" />
+                    <img alt="Плавная и бесшумная настройка высоты" class="full-img__img"
+                        src="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-grid3-desc.webp" />
+                </picture>
+
+                <h5 class="grid-item__title">Плавная и бесшумная настройка высоты</h5>
+            </div>
+
+            <div class="grid-layout__grid-item grid-item">
+                <picture>
+                    <source media="(max-width: 480px)"
+                        srcset="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-grid4-mob.webp" />
+                    <img alt="Информативный дисплей" class="full-img__img"
+                        src="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-grid4-desc.webp" />
+                </picture>
+
+                <h5 class="grid-item__title">Информативный дисплей</h5>
+            </div>
+        </section>
+
+        <section class="full-img full-img_text-right">
+            <picture>
+                <source media="(max-width: 480px)"
+                    srcset="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-block2-mob.webp" />
+                <img alt="Измени свои рабочие будни" class="full-img__img"
+                    src="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-block2-desc.webp" />
+            </picture>
+
+            <div class="title-box title-box_block2">
+                <h4 class="title-box__title">Измени свои рабочие будни</h4>
+            </div>
+        </section>
+
+        <section class="full-img full-img_text-left">
+            <picture>
+                <source media="(max-width: 480px)"
+                    srcset="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-block3-mob.webp" />
+                <img alt="Создайте идеальную рабочую зону дома" class="full-img__img"
+                    src="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-block3-desc.webp" />
+            </picture>
+
+            <div class="title-box title-box_block3">
+                <h4 class="title-box__title">Создайте идеальную рабочую зону дома</h4>
+            </div>
+        </section>
+
+        <section class="full-img full-img_text-left">
+            <picture>
+                <source media="(max-width: 480px)"
+                    srcset="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-block4-mob.webp" />
+                <img alt="Сохраните до 3 настроек положения высоты" class="full-img__img"
+                    src="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-block4-desc.webp" />
+            </picture>
+
+            <div class="title-box title-box_block4">
+                <h4 class="title-box__title">Сохраните до 3 настроек положения высоты</h4>
+            </div>
+        </section>
+
+        <section class="full-img">
+            <picture>
+                <source media="(max-width: 480px)"
+                    srcset="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-block5-mob.webp" />
+                <img alt="Лучше конкурентов" class="full-img__img"
+                    src="https://shop.onkron.ru/images/content/new_listings/cdf222e-b-imgs/cdf222e-b-block5-desc.webp" />
+            </picture>
+        </section>
+    </div>
+</div>
