@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import * as XLSX from "xlsx";
 import { BounceLoader } from "react-spinners";
-import config from "./config";
 function App() {
   const [newProduct, setNewProducts] = useState([]);
   const [loading, setLoading] = useState(false);
