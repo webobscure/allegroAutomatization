@@ -3,10 +3,24 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  max-width: 100%;
+
 }
 
+.button-handle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+td {
+  max-width: 200px;
+  word-wrap: break-word; /* Для поддержки старых браузеров */
+  overflow-wrap: break-word;
+}
 th,td {
   border: 1px solid #FFF;
+  font-size: 10px;
 }
 
 .logo {
