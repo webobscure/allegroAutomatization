@@ -12,7 +12,7 @@ function App() {
     const myHeaders = new Headers();
     myHeaders.append(
       "X-Shopify-Access-Token",
-      config.shopifyAccessToken
+      "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"
     );
     myHeaders.append("rel", "next");
     const requestOptions = {
